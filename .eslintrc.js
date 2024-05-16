@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 module.exports = {
   env: {
     browser: true,
@@ -16,7 +17,7 @@ module.exports = {
   plugins: ["react", "jest"],
   rules: {
     indent: ["error", 2],
-    "linebreak-style": ["error", "windows"],
+    "linebreak-style": ["error", "unix"],
     eqeqeq: "error",
     "no-trailing-spaces": "error",
     "object-curly-spacing": ["error", "always"],
