@@ -1,4 +1,22 @@
----
+name: Hello World!
+on:
+  push:
+    branches:
+      - main
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Say hello
+        run: |
+          echo "Hello World!"
+      - name: Now it is
+        run: |
+          date
+      - name: Directory content
+        run: |
+          ls -l
+
 #-----------------------------------------------------
 #name: Health Check!
 #on:
@@ -46,23 +64,4 @@
 #          text: Health Check OK!
 #          webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
 #
-#-----------------------------------------------------
-#name: Hello World!
-#on:
-#  push:
-#    branches:
-#      - main
-#jobs:
-#  hello_world_job:
-#    runs-on: ubuntu-20.04
-#    steps:
-#      - name: Say hello
-#        run: |
-#          echo "Hello World!"
-#      - name: Now it is
-#        run: |
-#          date
-#      - name: Directory content
-#        run: |
-#          ls -l
 #-----------------------------------------------------
